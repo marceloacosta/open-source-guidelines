@@ -34,4 +34,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-These guidelines are based on best practices from the open source community and insights from experienced maintainers and contributors.
+These guidelines are primarily based on the excellent course ["Contributing To Open Source – Beginner's Guide"](https://www.youtube.com/watch?v=mklEhT_RLos) by James Pierce, former head of Open Source at Meta. Additional insights have been gathered from best practices in the open source community and experienced maintainers and contributors.

@@ -1,6 +1,6 @@
 # Contributing to Open Source Projects
 
-This guide provides comprehensive guidelines for contributing to open source projects, with a focus on effective communication, understanding, and collaboration.
+This guide provides comprehensive guidelines for contributing to open source projects, with a focus on effective communication, understanding, and collaboration. These guidelines are primarily based on the excellent course ["Contributing To Open Source – Beginner's Guide"](https://www.youtube.com/watch?v=mklEhT_RLos) by James Pierce, former head of Open Source at Meta.
 
 ## Core Principles
 
