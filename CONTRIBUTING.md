@@ -174,32 +174,98 @@ New to open source? Don't worry! Here's a simple step-by-step guide to make your
 - Mentor new contributors
 - Support project maintenance
 
-## 🛠 Basic Git Commands for Beginners
+## 🛠 Git Guide for Beginners
 
-Here are the essential Git commands you'll need:
+### Initial Setup
 
 ```bash
+# Configure Git (do this once)
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
 # Clone a repository
 git clone https://github.com/username/repository.git
-
-# Create and switch to a new branch
-git checkout -b your-branch-name
-
-# Check which files you've modified
-git status
-
-# Add your changes
-git add filename    # Add specific file
-git add .          # Add all files
-
-# Commit your changes
-git commit -m "Brief description of your changes"
-
-# Push your changes
-git push origin your-branch-name
+cd repository
 ```
 
-Remember: It's okay to make mistakes! You can always ask for help, and most projects have guides for undoing changes.
+### Daily Workflow
+
+```bash
+# Get latest changes from remote
+git pull origin main
+
+# Create a new branch for your feature/fix
+git checkout -b descriptive-branch-name
+
+# Check status of your changes
+git status
+
+# Stage your changes
+git add filename     # Add specific file
+git add .           # Add all changes
+
+# Commit your changes
+git commit -m "type: brief description of changes"
+# Example: git commit -m "fix: correct typo in README"
+
+# Push your branch to GitHub
+git push origin descriptive-branch-name
+```
+
+### Common Scenarios
+
+```bash
+# Undo changes in a file before staging
+git checkout -- filename
+
+# Undo staged changes
+git reset filename
+git reset          # Undo all staged changes
+
+# Update your branch with latest main
+git checkout main
+git pull
+git checkout your-branch
+git merge main
+
+# View commit history
+git log --oneline  # Compact view
+git log           # Detailed view
+```
+
+### Commit Message Types
+
+- `feat:` New feature
+- `fix:` Bug fix
+- `docs:` Documentation changes
+- `style:` Formatting, missing semicolons, etc.
+- `refactor:` Code restructuring
+- `test:` Adding tests
+- `chore:` Maintenance tasks
+
+### Tips
+
+1. **Before Starting Work**
+   - Always pull the latest changes
+   - Create a new branch for each feature/fix
+   - Choose descriptive branch names
+
+2. **Making Changes**
+   - Make small, focused commits
+   - Write clear commit messages
+   - Test your changes before committing
+
+3. **Before Pushing**
+   - Review your changes with `git status`
+   - Make sure tests pass
+   - Update your branch with main if needed
+
+4. **If Something Goes Wrong**
+   - Don't panic! Git keeps history
+   - Use `git status` to check current state
+   - Ask for help in project's chat/forum
+
+Remember: It's normal to make mistakes while learning Git. Most mistakes can be undone, and the community is here to help!
 
 ## Best Practices Checklist
 
